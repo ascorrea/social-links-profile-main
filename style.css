@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 150%; 
+    color: #fff;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #141414;
+    
+    main{
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contenedor-principal{
+            width: 90%;
+            max-width: 384px;
+            border-radius: 12px;
+            padding: 40px;
+            background-color: #1F1F1F;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+            img{
+                width: 88px;
+                height: 88px;
+                border-radius: 50%;
+                box-shadow: 1px 1px 6px rgb(19, 19, 19);
+            }
+
+            .contenedor-info-personal{
+
+                h1{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                h2{
+                    font-weight: 700;
+                    color: #C4F82A;
+                    margin-bottom: 24px;
+                }
+            }
+
+            .contenedor-enlaces-sociales{
+                width: 100%;
+                
+                ul{
+                    width: inherit;
+                    font-weight: 700;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                
+                    li{
+                        background-color: #333333;
+                        border-radius: 8px;
+                    
+                        a{
+                            display: block;
+                            padding: 12px;
+                            border-radius: inherit;
+                            transition: all .2s;
+
+                            &:hover{
+                                background-color: #C4F82A;
+                                color: #333333;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        
+    }
+}
+
+
